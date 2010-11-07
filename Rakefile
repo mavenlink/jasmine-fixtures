@@ -5,17 +5,17 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "jasmine-fixtures"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
-    gem.email = "pair+jonathan+roger@pivotallabs.com"
+    gem.summary = %Q{Jasmine Fixtures allow you to use real DOM to test your JavaScript}
+    gem.description = %Q{Dump out DOM that you want to test. Use jasmine-fixtures to load that DOM into your Jasmine specs.}
+    gem.email = "roger@mavenlink.com"
     gem.homepage = "http://github.com/mavenlink/jasmine-fixtures"
-    gem.authors = ["Jonathan Barnes & Roger Neel"]
+    gem.authors = ["Roger Neel", "Jonathan Barnes", "JB Steadman"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
-  puts "Jeweler (or a dependency) not available. Install it with: gem install jeweler"
+  puts "Jeweler (or a dependency) not available. Do a 'bundle install' to make sure you have all gems/dependencies installed."
 end
 
 require 'spec/rake/spectask'
