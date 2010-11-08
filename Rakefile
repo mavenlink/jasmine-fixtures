@@ -1,12 +1,13 @@
 require 'rubygems'
 require 'rake'
+require 'rspec'
 
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "jasmine-fixtures"
     gem.summary = %Q{Jasmine Fixtures allow you to use real DOM to test your JavaScript}
-    gem.description = %Q{Dump out DOM that you want to test. Use jasmine-fixtures to load that DOM into your Jasmine specs.}
+    gem.description = %Q{Dump out DOM that you want to test. Use jasmine-fixtures to load that DOM into your Jasmine specs. See github.com/mavenlink/jasmine-fixtures for more.}
     gem.email = "roger@mavenlink.com"
     gem.homepage = "http://github.com/mavenlink/jasmine-fixtures"
     gem.authors = ["Roger Neel", "Jonathan Barnes", "JB Steadman"]

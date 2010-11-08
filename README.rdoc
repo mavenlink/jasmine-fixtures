@@ -1,17 +1,35 @@
 = jasmine-fixtures
 
-Description goes here.
+Jasmine Fixtures is an add-on for the behavior-driven development framework, Jasmine. If you're using Jasmine to test the JavaScript in your Ruby projects and you want to test your DOM and bindings, you can use Jasmine Fixtures.
+
+The gem includes 3 major pieces:
+1) The helpers required to loadFixture() within your Jasmine specs
+2) JQuery-based matchers to make your life easier
+3) RSpec-based methods for creating DOM fixtures
+
+== Installing
+
+gem install jasmine-fixtures
+script/generate jasmine-fixtures
+
+== Assumptions
+
+You haven't messed with the default Jasmine configuration to load everything in the helpers directory. If you have, make sure you get the jasmine-fixture-*.js files loaded.
+
+All your fixtures should be in /tmp/js_dom_fixtures/FIXTURE_NAME.fixture.html.erb
+
+You can roll your own fixtures and use the above path/naming convention. Also, be sure to wrap all fixtures in a wrapping <div>{Your content goes here}</div> that we ignore.
+
+Alternatively, if you use our RSpec-based methods to generate fixtures (the better way), you need RSpec!
 
 == Note on Patches/Pull Requests
  
 * Fork the project.
 * Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
 * Commit, do not mess with rakefile, version, or history.
   (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
 == Copyright
 
-Copyright (c) 2010 Jonathan Barnes & Roger Neel. See LICENSE for details.
+Copyright (c) 2010. See LICENSE for details.
