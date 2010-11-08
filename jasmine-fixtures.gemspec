@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jasmine-fixtures}
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Roger Neel", "Jonathan Barnes", "JB Steadman"]
@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
      "generators/jasmine-fixtures/templates/spec/javascripts/helpers/jasmine-fixture-helper.js",
      "generators/jasmine-fixtures/templates/spec/javascripts/helpers/jasmine-fixture-loader.js",
      "generators/jasmine-fixtures/templates/spec/javascripts/helpers/jasmine-fixture-matchers.js",
-     "generators/jasmine-fixtures/templates/spec/spec_helpers/jasmine_fixture_generator_methods.rb",
+     "generators/jasmine-fixtures/templates/spec/support/jasmine_fixture_generator_methods.rb",
      "jasmine-fixtures.gemspec",
      "lib/jasmine-fixtures.rb",
      "spec/jasmine-fixtures_spec.rb",
