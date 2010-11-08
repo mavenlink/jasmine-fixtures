@@ -2,4 +2,6 @@ Jasmine Fixtures have been installed!
 
 We copied JasmineFixtureHelper.js and LoadFixture.js into your spec/javascripts/helpers dir. In its default configuration, Jasmine should pick these files up. 
 
+Next step is to run: script/generate jasmine_fixtures
+
 Take a look at https://github.com/mavenlink/jasmine-fixtures for tips & more info.

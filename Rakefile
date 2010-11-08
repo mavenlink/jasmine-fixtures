@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'rake'
 require 'spec'
+require 'nokogiri'
 
 begin
   require 'jeweler'
