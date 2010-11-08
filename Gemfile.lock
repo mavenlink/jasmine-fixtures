@@ -1,6 +1,5 @@
 GEM
   remote: http://rubygems.org/
-  remote: http://gems.github.com/
   specs:
     gemcutter (0.6.1)
     git (1.2.5)

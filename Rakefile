@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'rake'
-require 'rspec'
+require 'spec'
 
 begin
   require 'jeweler'
