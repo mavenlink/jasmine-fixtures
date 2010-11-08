@@ -2,6 +2,7 @@ pairs:
   jb: Jonathan Barnes; jonathan
   jbs: JB Steadman; jb
   rn: Roger Neel
+  ac: Andrew Cantino
 email:
   prefix: pair
   domain: mavenlink.com

@@ -22,11 +22,11 @@ Spec::Rails::Example::ControllerExampleGroup.class_eval do
     remove_third_party_scripts(doc)
     content = doc.css(selector).first.to_s
 
-    return convert_body_tag_to_div(content)
+    convert_body_tag_to_div(content)
   end
 
-  # Remove scripts such as Google Analytics to avoid running them
-  # when we load into the dom during js specs.
+  # Recommended that you add all body-level third party scripts inside a div called #third-party-scripts
+  # so that they can be removed during testing.
   def remove_third_party_scripts(doc)
     scripts = doc.at('#third-party-scripts')
     scripts.remove if scripts
@@ -40,6 +40,6 @@ Spec::Rails::Example::ControllerExampleGroup.class_eval do
   # Here we convert the body tag to a div so that we can load it into
   # the document running js specs without embedding a <body> within a <body>.
   def convert_body_tag_to_div(markup)
-    return markup.gsub("<body", '<div').gsub("</body>", "</div>")
+    markup.gsub("<body", '<div').gsub("</body>", "</div>")
   end
 end

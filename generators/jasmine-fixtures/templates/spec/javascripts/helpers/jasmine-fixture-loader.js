@@ -9,12 +9,11 @@ spec.loadFixture = function(fixtureName) {
   // get the markup, inject it into the dom
   $destination.html(spec.fixtureHtml(fixtureName) + indicatorScript);
   while (uniqueLoadIndicator != "loaded") {
-    if (console) console.log("FireFox wasn't ready... sleeping.");
+    //
+    if (console) console.log("Browser wasn't ready... sleeping.");
     spec.retrieveFixture(fixtureName);
   }
   uniqueLoadIndicator = null;
-
-  bindBehaviors();
 
   // keep track of fixture count to fail specs that
   // call loadFixture() more than once
