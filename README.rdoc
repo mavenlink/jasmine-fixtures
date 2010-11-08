@@ -16,6 +16,8 @@ gem install jasmine-fixtures
 
 script/generate jasmine-fixtures
 
+If you want to use the fixture generator, you need to load jasmine_fixture_generator_methods.rb. If you load everything in your spec_helpers directory in your spec_helper.rb already, you're good to go. Otherwise, make sure it's required with the rest of your requires in spec_helper.rb.
+
 == Assumptions
 
 You haven't messed with the default Jasmine configuration to load everything in the helpers directory. If you have, make sure you get the jasmine-fixture-*.js files loaded.
