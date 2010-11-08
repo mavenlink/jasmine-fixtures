@@ -9,6 +9,8 @@ class JasmineFixturesGenerator < Rails::Generator::Base
       m.directory "spec/spec_helpers"
       m.file "spec/spec_helpers/jasmine_fixture_generator_methods.rb", "spec/spec_helpers/jasmine_fixture_generator_methods.rb"
       
+      m.directory "spec/controllers"
+      m.file "spec/controllers/jasmine_fixture_creators.rb", "spec/controllers/jasmine_fixture_creators.rb"
       m.readme "INSTALL"
     end
   end
