@@ -34,6 +34,7 @@ Gem::Specification.new do |s|
      "generators/jasmine-fixtures/templates/spec/javascripts/helpers/jasmine-fixture-loader.js",
      "generators/jasmine-fixtures/templates/spec/javascripts/helpers/jasmine-fixture-matchers.js",
      "generators/jasmine-fixtures/templates/spec/spec_helpers/jasmine_fixture_generator_methods.rb",
+     "jasmine-fixtures.gemspec",
      "lib/jasmine-fixtures.rb",
      "spec/jasmine-fixtures_spec.rb",
      "spec/spec.opts",
