@@ -3,13 +3,17 @@
 Jasmine Fixtures is an add-on for the behavior-driven development framework, Jasmine. If you're using Jasmine to test the JavaScript in your Ruby projects and you want to test your DOM and bindings, you can use Jasmine Fixtures.
 
 The gem includes 3 major pieces:
+
 1) The helpers required to loadFixture() within your Jasmine specs
+
 2) JQuery-based matchers to make your life easier
+
 3) RSpec-based methods for creating DOM fixtures
 
 == Installing
 
 gem install jasmine-fixtures
+
 script/generate jasmine-fixtures
 
 == Assumptions
