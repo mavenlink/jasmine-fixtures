@@ -1,7 +1,5 @@
 require 'rubygems'
 require 'rake'
-require 'spec'
-require 'nokogiri'
 
 begin
   require 'jeweler'
@@ -13,6 +11,7 @@ begin
     gem.homepage = "http://github.com/mavenlink/jasmine-fixtures"
     gem.authors = ["Roger Neel", "Jonathan Barnes", "JB Steadman"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.add_dependency "nokogiri", ">= 1.4.0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
