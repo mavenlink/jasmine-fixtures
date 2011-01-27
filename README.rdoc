@@ -12,11 +12,18 @@ The gem includes 3 major pieces:
 
 == Installing
 
+We're assuming you're on Rails 2.3.10, you've installed rspec, and you've installed the jasmine gem and run "script/generate jasmine".
+
 gem install jasmine-fixtures
 
 script/generate jasmine_fixtures
 
-If you want to use the fixture generator, you need to load jasmine_fixture_generator_methods.rb. If you load everything in your spec_helpers directory in your spec_helper.rb already, you're good to go. Otherwise, make sure it's required with the rest of your requires in spec_helper.rb.
+If you want to use the fixture generator, you need to load jasmine_fixture_generator_methods.rb. If you load everything in your support directory in your spec_helper.rb already, you're good to go. Otherwise, make sure it's required with the rest of your requires in spec_helper.rb.
+
+Once you run the generator, take a look at the added files to see how to generate and use the fixtures, especially
+  spec/controllers/jasmine_fixture_creators.rb
+and
+  spec/javascripts/example-users-spec.js
 
 == Assumptions
 

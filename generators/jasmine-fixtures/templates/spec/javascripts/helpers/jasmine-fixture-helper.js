@@ -15,7 +15,7 @@ afterEach(function() {
 
 spec.cleanupHooks = function() {
   // clearLiveEventBindings is helpful if using jQuery live events, uncomment if you'd like to use it.
-	// spec.clearLiveEventBindings();
+  // spec.clearLiveEventBindings();
 };
 
 spec.clearLiveEventBindings = function() {

@@ -24,23 +24,21 @@ describe UsersController do
   #You need to integrate_views in each of your describes to get the content of the response
   integrate_views
 
-  #Example of a standard request that would use html_for to strip <body>
-  it "generates a new user page" do
-    get :new
-    response.should be_success
-    save_fixture(html_for('body'), 'user-signup-page')
-  end
-
-  #Example of a logged-in ajax request that doesn't have a body tag to strip out
-  describe "a user's profile" do
-    before do
-      log_in users(:james)
+  describe "user signup" do
+    #Example of a standard request that would use html_for to strip <body>
+    it "generates a new user signup page" do
+      get :new
+      response.should be_success
+      save_fixture(html_for('body'), 'user-signup-page')
     end
 
-    it "generates a new user profile xhr" do
-      xhr :get, :show, :id => users(:james).to_param
-      response.should be_success
-      save_fixture(response.body, 'user-profile-page')
+    #Example of an ajax request that doesn't have a body tag to strip out
+    describe "a user's profile" do
+      it "generates successful signup xhr response" do
+        xhr :post, :create, :user => { :name => 'Bob', :password => 'something', :password_confirmation => 'something' }
+        response.should be_success
+        save_fixture(response.body, 'user-success-ajax-response')
+      end
     end
   end
 end

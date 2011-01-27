@@ -4,6 +4,8 @@ class JasmineFixturesGenerator < Rails::Generator::Base
       m.directory "spec/javascripts/helpers"
       m.file "spec/javascripts/helpers/jasmine-fixture-helper.js", "spec/javascripts/helpers/jasmine-fixture-helper.js"
       m.file "spec/javascripts/helpers/jasmine-fixture-loader.js", "spec/javascripts/helpers/jasmine-fixture-loader.js"
+      m.file "spec/javascripts/helpers/jquery-matchers.js", "spec/javascripts/helpers/jquery-matchers.js"
+      m.file "spec/javascripts/example-users-spec.js", "spec/javascripts/example-users-spec.js"
 
       m.directory "spec/support"
       m.file "spec/support/jasmine_fixture_generator_methods.rb", "spec/support/jasmine_fixture_generator_methods.rb"
