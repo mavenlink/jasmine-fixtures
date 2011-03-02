@@ -5,16 +5,15 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jasmine-fixtures}
-  s.version = "0.1.6"
+  s.version = "0.1.7"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Roger Neel", "Jonathan Barnes", "JB Steadman", "Andrew Cantino"]
-  s.date = %q{2011-01-27}
+  s.date = %q{2011-03-01}
   s.description = %q{Dump out DOM that you want to test. Use jasmine-fixtures to load that DOM into your Jasmine specs. See http://github.com/mavenlink/jasmine-fixtures for more.}
   s.email = %q{roger@mavenlink.com}
   s.extra_rdoc_files = [
-    "LICENSE",
-     "README.rdoc"
+    "README.rdoc"
   ]
   s.files = [
     ".bundle/config",
@@ -23,7 +22,7 @@ Gem::Specification.new do |s|
      ".pairs",
      "Gemfile",
      "Gemfile.lock",
-     "LICENSE",
+     "MIT-LICENSE",
      "README.rdoc",
      "Rakefile",
      "VERSION",
