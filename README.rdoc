@@ -36,7 +36,7 @@ You can roll your own fixtures and use the above path/naming convention. Also, b
 Alternatively, if you use our RSpec-based methods to generate fixtures (the better way), you need RSpec!
 
 == Note on Patches/Pull Requests
- 
+
 * Fork the project.
 * Make your feature addition or bug fix.
 * Commit, do not mess with rakefile, version, or history.
